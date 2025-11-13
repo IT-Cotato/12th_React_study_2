@@ -7,6 +7,7 @@ Inflearn에서 **'따라하며 배우는 리액트 A-Z'** 강의를 매주 듣�
 
 스터디 기간 종료 전에 강의 수강을 완료한 경우 실습 위주의 방식으로 전환할 계획입니다.
 
+강의 링크 : https://inf.run/Lk7UB
 
 ## 🗓️ 스터디 일정
 - 정기 모임 : 매주 일요일 오후 9시
@@ -25,12 +26,53 @@ Inflearn에서 **'따라하며 배우는 리액트 A-Z'** 강의를 매주 듣�
 |6주차|섹션9(1/2). Next.js와 TypeScript|11/9|
 |7주차|섹션9(2/2). Next.js와 TypeScript|11/16|
 |8주차|섹션10,11. 리액트 version 18, 리덕스|11/23|
-|9주차|섹션 12,13. 도커를 이용한 리액트 실행, React 19|11/30|
+|9주차|섹션 12,13. 도커를 이용한 리액트 실행, React 19|12/21|
 
-**시험기간으로 인해 10/19 10/26 11/2 3회는 휴회**
+**시험기간으로 인해 10/19 10/26 11/2 11/30 12/07 12/14는 휴회**
 
 
 ## 🗒️ 스터디 진행 방식
 - 해당 주차의 강의를 듣고 노션에 내용 정리
-- 정기 모임 시 랜덤 사다리타기로 발표자 2인 선정 후 노션 정리한 내용 발표
+- 정기 모임 시 발표자 2인 선정 후 노션 정리한 내용 발표
 - 강의를 듣고 실습하는 동안 생긴 문제점이나 어려운 부분 질의응답
+
+## 🧑‍💻 GitHub 운영 방식
+
+1. 초기 설정
+   - 스터디 저장소를 로컬로 clone
+     ```bash
+     git clone [https://github.com/IT-Cotato/12th_React_study_2.git](https://github.com/IT-Cotato/12th_React_study_2.git)
+     ```
+   - 정리 내용 제출 전 본인 깃허브 핸들명으로 브랜치를 생성
+     ```bash
+     git checkout -b [본인 깃허브 핸들명]/week[n]
+     ```
+   - 본인의 기본 디렉토리 구조를 생성
+     ```bash
+     mkdir -p [본인 깃허브 핸들명]/week1
+     ```
+
+2. 학습 내용 업로드
+   - 학습 내용을 `[본인 깃허브 핸들명]/week[n]` 안에 md 형식으로 작성 후 커밋
+
+3. 커밋 및 PR 생성
+   - 커밋
+     ```bash
+     git add .
+     git commit -m "[Docs] 신지예 n주차 제출"
+     git push origin [본인 깃허브 핸들명]/week[n]
+     ```
+   - GitHub에서 `develop` 브랜치로 PR을 생성
+   - PR 제목은 `[n주차] 이름` 형식으로 작성
+
+4. 다음 과제 세팅
+   - PR이 merge된 후, 최신 `develop` 브랜치를 pull
+     ```bash
+     git checkout develop
+     git pull origin develop
+     git checkout -b [본인 깃허브 핸들명]/week[n+1]
+     ```
+   - 해당 주차의 폴더를 생성
+     ```bash
+     mkdir -p [본인 깃허브 핸들명]/week[n+1]
+     ```
