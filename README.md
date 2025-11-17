@@ -12,9 +12,9 @@ Inflearn에서 **'따라하며 배우는 리액트 A-Z'** 강의를 매주 듣�
 
 ## 🗓️ 스터디 일정
 
-  - 정기 모임 : 매주 일요일 오후 9시
-  - 진행 방식 : 비대면 디스코드
-  - 과제 제출 : 매주 일요일 오후 9시 이전
+* **정기 모임** : 매주 일요일 오후 9시
+* **진행 방식** : 비대면 디스코드
+* **과제 제출** : 매주 일요일 오후 9시 이전
 
 ## ✏️ 주차별 커리큘럼
 
@@ -32,58 +32,65 @@ Inflearn에서 **'따라하며 배우는 리액트 A-Z'** 강의를 매주 듣�
 |8주차|섹션10,11. 리액트 version 18, 리덕스|11/23|
 |9주차|섹션 12,13. 도커를 이용한 리액트 실행, React 19|12/21|
 
-**시험기간으로 인해 10/19 10/26 11/2 11/30 12/07 12/14는 휴회**
+> 💡 **휴회 안내:** 시험기간으로 인해 **10/19, 10/26, 11/2, 11/30, 12/07, 12/14**는 휴회합니다.
 
 ## 🗒️ 스터디 진행 방식
 
-  - 해당 **프로젝트 범위**의 강의를 듣고 노션에 내용 정리
-  - 정기 모임 시 발표자 2인 선정 후 노션 정리한 내용 발표
-  - 강의를 듣고 **프로젝트를 실습**하는 동안 생긴 문제점이나 어려운 부분 질의응답
+* 해당 **프로젝트 범위**의 강의를 듣고 노션에 내용 정리
+* 정기 모임 시 발표자 2인 선정 후 노션 정리한 내용 발표
+* 강의를 듣고 **프로젝트를 실습**하는 동안 생긴 문제점이나 어려운 부분 질의응답
 
 ## 🧑‍💻 GitHub 운영 방식
 
-1.  초기 설정
-        - 스터디 저장소를 로컬로 clone
-          ```bash
-          git clone [https://github.com/IT-Cotato/12th_React_study_2.git](https://github.com/IT-Cotato/12th_React_study_2.git)
-          ```
-        - **프로젝트 실습 전** 본인 깃허브 핸들명과 프로젝트명으로 브랜치를 생성
-          ```bash
-          git checkout -b [본인 깃허브 핸들명]/[프로젝트명]
-          # 예시: git checkout -b J-H-C/todo-app
-          ```
-        - 본인의 프로젝트 디렉토리 구조를 생성
-          ```bash
-          mkdir -p [본인 깃허브 핸들명]/[프로젝트명]
-          # 예시: mkdir -p J-H-C/todo-app
-          ```
+### 1. 초기 설정
 
-2.  학습 내용 업로드
-        - 학습한 **프로젝트 실습 결과물(코드 전체)**을 `[본인 깃허브 핸들명]/[프로젝트명]` 디렉토리 안에 업로드합니다.
-        - (필요시 노션 정리 링크가 포함된 `README.md` 파일을 프로젝트 루트에 함께 생성합니다.)
+* **스터디 저장소를 로컬로 clone**
+    ```bash
+    git clone [https://github.com/IT-Cotato/12th_React_study_2.git](https://github.com/IT-Cotato/12th_React_study_2.git)
+    ```
+* **프로젝트 실습 전 브랜치 생성** (형식: `[본인 깃허브 핸들명]/[프로젝트명]`)
+    ```bash
+    # 예시: git checkout -b J-H-C/todo-app
+    git checkout -b [본인 깃허브 핸들명]/[프로젝트명]
+    ```
+* **본인의 프로젝트 디렉토리 구조 생성**
+    ```bash
+    # 예시: mkdir -p J-H-C/todo-app
+    mkdir -p [본인 깃허브 핸들명]/[프로젝트명]
+    ```
 
-3.  커밋 및 PR 생성
-        - 커밋
-          ```bash
-          git add .
-          git commit -m "[Project] [이름] [프로젝트명] 제출"
-          # 예시: git commit -m "[Project] 신지예 todo-app 제출"
-          git push origin [본인 깃허브 핸들명]/[프로젝트명]
-          ```
-        - GitHub에서 `develop` 브랜치로 PR을 생성
-        - PR 제목은 `[[프로젝트명]] [이름]` 형식으로 작성
-           # 예시: `[To-do App] 신지예`
+### 2. 학습 내용 업로드
 
-4.  다음 과제 세팅
-        - PR이 merge된 후, 최신 `develop` 브랜치를 pull
-          ```bash
-          git checkout develop
-          git pull origin develop
-          git checkout -b [본인 깃허브 핸들명]/[다음-프로젝트명]
-          # 예시: git checkout -b J-H-C/netflix-app
-          ```
-        - 다음 프로젝트의 폴더를 생성
-          ```bash
-          mkdir -p [본인 깃허브 핸들명]/[다음-프로젝트명]
-          # 예시: mkdir -p J-H-C/netflix-app
-          ```
+* 학습한 **프로젝트 실습 결과물(코드 전체)**을 `[본인 깃허브 핸들명]/[프로젝트명]` 디렉토리 안에 업로드합니다.
+* (필요시 노션 정리 링크가 포함된 `README.md` 파일을 프로젝트 루트에 함께 생성합니다.)
+
+### 3. 커밋 및 PR 생성
+
+* **커밋 및 푸시**
+    ```bash
+    git add .
+    
+    # 예시: git commit -m "[Project] 신지예 todo-app 제출"
+    git commit -m "[Project] [이름] [프로젝트명] 제출"
+    
+    git push origin [본인 깃허브 핸들명]/[프로젝트명]
+    ```
+* **PR 생성**
+    * GitHub에서 `develop` 브랜치로 PR을 생성합니다.
+    * **PR 제목:** `[[프로젝트명]] [이름]` (예시: `[To-do App] 신지예`)
+
+### 4. 다음 과제 세팅
+
+* **PR이 merge된 후, 최신 `develop` 브랜치를 pull하고 새 브랜치 생성**
+    ```bash
+    git checkout develop
+    git pull origin develop
+    
+    # 예시: git checkout -b J-H-C/netflix-app
+    git checkout -b [본인 깃허브 핸들명]/[다음-프로젝트명]
+    ```
+* **다음 프로젝트의 폴더 생성**
+    ```bash
+    # 예시: mkdir -p J-H-C/netflix-app
+    mkdir -p [본인 깃허브 핸들명]/[다음-프로젝트명]
+    ```
